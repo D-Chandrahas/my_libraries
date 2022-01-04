@@ -1,5 +1,3 @@
-//#include "C:/Users/vishnu/Desktop/c/my_functions/matrixfunctions.h"
-//or #include <myfunctions.h> environment variable CPLUS_INCLUDE_PATH
 #ifndef MATRIXFUNCTIONS_H
 #define MATRIXFUNCTIONS_H
 
