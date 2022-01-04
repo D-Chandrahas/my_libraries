@@ -167,6 +167,18 @@ int factors (const double &n) {
 	return factors;
 }
 
+double absolute (const double &n){
+	return (n<0)? (-1)*n : n;
+}
+
+double square_root (const double &n,const double &epsilon){
+	double i=1;
+	while(absolute((i*i)-n)>epsilon){
+		i = i - (((i*i)-n)/(2*i));
+	}
+	return i;
+}
+
 void printmat (const int &rows, const int &columns, float * mat_ptr) {
 	for(int i=0;i<rows;i++){
 		for(int j=0;j<columns;j++){
