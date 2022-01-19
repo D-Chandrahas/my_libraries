@@ -1,3 +1,5 @@
+//#include "C:/Users/vishnu/Desktop/c/my_functions/matrixfunctions.h"
+//or #include <myfunctions.h> environment variable CPLUS_INCLUDE_PATH
 #ifndef MATRIXFUNCTIONS_H
 #define MATRIXFUNCTIONS_H
 
@@ -19,7 +21,7 @@ float cofactor (float m[3][3], const int &r, const int &c);
 
 float det (float m[3][3]);
 
-float * transpose (const int &rows,const int &columns, float * t );
+void transpose (const int &rows,const int &columns, float *old, float *neu);
 
 float * adjoint (float m[3][3]);
 

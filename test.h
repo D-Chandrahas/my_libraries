@@ -224,15 +224,14 @@ float det (float m[3][3]) {
 	return det;
 }
 
-float * transpose (const int &rows,const int &columns, float * t ) {
-	static float * matrix100 = new float[rows*columns];
+void transpose (const int &rows,const int &columns, float *old, float *neu) {
 	for (int i=0; i<rows; i++) {
 		for (int j=0; j<columns; j++) {
 			//*(matrix100+(rows*j)+i) = *(t+(columns*i)+j);this line and next line do the same
-			matrix100[(rows*j)+i] = *(t+(columns*i)+j);
+			neu[(rows*j)+i] = old[(columns*i)+j];
 		}
 	}
-	return matrix100;
+	return ;
 }
 
 float * adjoint (float m[3][3]) {
