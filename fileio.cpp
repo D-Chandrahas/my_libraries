@@ -10,8 +10,8 @@ void mkdir(const string &filepath) {
 
 bool checkfile(const string &filepath) {
 	ifstream ifile(filepath);
-	if(ifile){return true;}
-	else{return false;}
+	if(ifile){ifile.close();return true;}
+	else{ifile.close();return false;}
 }
 
 bool printfile(const string &filepath) {
