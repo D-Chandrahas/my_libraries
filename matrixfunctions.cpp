@@ -47,7 +47,7 @@ float det (float m[3][3]) {
 	return det;
 }
 
-void transpose (const int &rows,const int &columns,const float *old,float *neu) {
+void transpose (const int &rows,const int &columns,const float *old, float *neu) {
 	for (int i=0; i<rows; i++) {
 		for (int j=0; j<columns; j++) {
 			//*(matrix100+(rows*j)+i) = *(t+(columns*i)+j);this line and next line do the same
