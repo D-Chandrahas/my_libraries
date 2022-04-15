@@ -21,7 +21,7 @@ float cofactor (float m[3][3], const int &r, const int &c);
 
 float det (float m[3][3]);
 
-void transpose (const int &rows,const int &columns,cons float *old, float *neu);
+void transpose (const int &rows,const int &columns, const float *old, float *neu);
 
 float * adjoint (float m[3][3]);
 
